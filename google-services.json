@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "728637465213",
+    "firebase_url": "https://otp-verification-5ca0b.firebaseio.com",
+    "project_id": "otp-verification-5ca0b",
+    "storage_bucket": "otp-verification-5ca0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728637465213:android:699ed9fa7133a71d",
+        "android_client_info": {
+          "package_name": "com.mdarshad.otp.ionic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728637465213-73mheng04onk2ucm5g4h5256bld360mf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mdarshad.otp.ionic",
+            "certificate_hash": "43186339ed82eae5b310cab7394ce54db304df18"
+          }
+        },
+        {
+          "client_id": "728637465213-40attelcj9u8c6pvmpmr3oqu3mqi7e58.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_z9GMwQGtk0Q1UaSi2bWPsrUUbQVKrPA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728637465213-40attelcj9u8c6pvmpmr3oqu3mqi7e58.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
