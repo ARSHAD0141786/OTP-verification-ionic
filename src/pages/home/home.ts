@@ -34,8 +34,10 @@ export class HomePage {
     let signInCredential = firebase.auth.PhoneAuthProvider.credential(this.verificationID,this.otpCode);
     firebase.auth().signInWithCredential(signInCredential).then((info) => {
       console.log(info);
+      alert('Successfully verified.');
     }, (error) => {
       console.log(error);
+      alert('Error in authentication');
     });
   }
 }
