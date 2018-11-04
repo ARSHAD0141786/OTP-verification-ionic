@@ -1,4 +1,5 @@
 <ion-content padding>
+  <ion-input type="tel" placeholder="Enter Phone number" [(ngModel)]="phoneNumber"></ion-input>
   <button ion-button full block (click)="send()">Send OTP</button>
   <ion-input type="number" placeholder="Enter OTP" [(ngModel)]="otpCode" ></ion-input>
   <button ion-button full block (click)="verifyOTP()">Verify OTP</button>

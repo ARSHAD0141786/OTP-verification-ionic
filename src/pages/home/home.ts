@@ -8,6 +8,7 @@ import * as firebase from 'firebase';
 export class HomePage {
 
   verificationID:any;
+  phoneNumber:string = "";
   otpCode:string = "";
   constructor(public navCtrl: NavController) {
 
@@ -15,10 +16,11 @@ export class HomePage {
 
   send(){
     console.log('Sending OTP......');
-    (<any>window).FirebasePlugin.verifyPhoneNumber('+918441975563', 120,(credential)=>{
+    console.log(this.phoneNumber);
+    (<any>window).FirebasePlugin.verifyPhoneNumber(this.phoneNumber, 60,(credential)=>{
       alert('OTP Sent successfully.');
       console.log(credential);
-      this.verificationID = credential.verificationID;
+      this.verificationID = credential.verificationId;
       console.log("Verificaion ID : "+this.verificationID);
     }, (error)=>{
       console.log(error);
@@ -27,7 +29,7 @@ export class HomePage {
 
   verifyOTP(){
     console.log("Verifying OTP.....");
-    console.log("OTP : "+this,this.otpCode);
+    console.log("OTP : "+this.otpCode);
     console.log("Verificaiton ID : "+this.verificationID);
     let signInCredential = firebase.auth.PhoneAuthProvider.credential(this.verificationID,this.otpCode);
     firebase.auth().signInWithCredential(signInCredential).then((info) => {
